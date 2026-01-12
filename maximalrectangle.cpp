@@ -44,7 +44,7 @@ private:
         for (int i = 0; i <= n; i++) {
             int currHeight = (i == n) ? 0 : heights[i];
 
-            // Maintain increasing stack
+            // Maintain increasing stack o
             while (!st.empty() && currHeight < heights[st.top()]) {
                 int height = heights[st.top()];
                 st.pop();
